@@ -1,7 +1,10 @@
 from slack_sdk.webhook import WebhookClient
 
+import os
+
 if __name__ == '__main__':
-    url = ""
+    url = os.environ['WEBHOOK_URL']
+
     webhook = WebhookClient(url)
     t = """Respond to this thread with the following:
     - What did you do yesterday?
