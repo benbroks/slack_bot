@@ -1,7 +1,7 @@
 from slack_sdk.webhook import WebhookClient
 
 if __name__ == '__main__':
-    url = "https://hooks.slack.com/services/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"
+    url = ""
     webhook = WebhookClient(url)
     t = """Respond to this thread with the following:
     - What did you do yesterday?
